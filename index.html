@@ -54,12 +54,18 @@
             <a href="#" class="logo">🍷 El Porvenir</a>
             <nav class="nav">
                 <ul class="nav-links">
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#carta">Carta</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#opiniones">Opiniones</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#nosotros" data-i18n="nav_about">Nosotros</a></li>
+                    <li><a href="#carta" data-i18n="nav_menu">Carta</a></li>
+                    <li><a href="#galeria" data-i18n="nav_gallery">Galería</a></li>
+                    <li><a href="#opiniones" data-i18n="nav_reviews">Opiniones</a></li>
+                    <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="es" onclick="setLanguage('es')" title="Español">ES</button>
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" title="English">EN</button>
+                    <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')" title="Français">FR</button>
+                </div>
             </nav>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <span></span><span></span><span></span>
@@ -71,16 +77,16 @@
     <section class="hero" style="background-image: url('images/hero.jpg');">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <div class="hero-badge">🍽️ Restaurante Tradicional</div>
+            <div class="hero-badge" data-i18n="hero_badge">🍽️ Restaurante Tradicional</div>
             <h1>El Porvenir</h1>
-            <p class="hero-subtitle">Sabores auténticos en el corazón del Valle de Uco</p>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Sabores auténticos en el corazón del Valle de Uco</p>
             <div class="hero-rating">
                 <span class="stars">⭐⭐⭐⭐⭐</span>
-                <span class="rating-text">4.5 estrellas · 786 opiniones</span>
+                <span class="rating-text" data-i18n="hero_rating">4.5 estrellas · 786 opiniones</span>
             </div>
             <div class="hero-cta">
-                <a href="#carta" class="btn btn-white">Ver carta</a>
-                <a href="https://maps.app.goo.gl/xcZSKzAjPeN5RPmn6" class="btn btn-outline" target="_blank">📍 Cómo llegar</a>
+                <a href="#carta" class="btn btn-white" data-i18n="hero_cta_menu">Ver carta</a>
+                <a href="https://maps.app.goo.gl/xcZSKzAjPeN5RPmn6" class="btn btn-outline" target="_blank" data-i18n="hero_cta_location">📍 Cómo llegar</a>
             </div>
         </div>
     </section>
@@ -90,21 +96,21 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-content">
-                    <h2>Nuestra Historia</h2>
-                    <p>El Porvenir es un rincón tradicional de San Carlos donde la buena comida y el calor humano se encuentran. Con más de 786 opiniones y una calificación de 4.5 estrellas, somos el lugar elegido por familias y viajeros que buscan auténticos sabores argentinos.</p>
-                    <p>Nuestras milanesas, carnes a la parrilla y postres caseros como la crema caramel son el reflejo de una cocina con alma, acompañada de los mejores vinos del Valle de Uco.</p>
+                    <h2 data-i18n="about_title">Nuestra Historia</h2>
+                    <p data-i18n="about_p1">El Porvenir es un rincón tradicional de San Carlos donde la buena comida y el calor humano se encuentran. Con más de 786 opiniones y una calificación de 4.5 estrellas, somos el lugar elegido por familias y viajeros que buscan auténticos sabores argentinos.</p>
+                    <p data-i18n="about_p2">Nuestras milanesas, carnes a la parrilla y postres caseros como la crema caramel son el reflejo de una cocina con alma, acompañada de los mejores vinos del Valle de Uco.</p>
                     <div class="about-features">
                         <div class="feature">
                             <span class="feature-icon">🥩</span>
-                            <span>Carnes selectas</span>
+                            <span data-i18n="feature_1">Carnes selectas</span>
                         </div>
                         <div class="feature">
                             <span class="feature-icon">🍷</span>
-                            <span>Vinos regionales</span>
+                            <span data-i18n="feature_2">Vinos regionales</span>
                         </div>
                         <div class="feature">
                             <span class="feature-icon">🏠</span>
-                            <span>Ambiente familiar</span>
+                            <span data-i18n="feature_3">Ambiente familiar</span>
                         </div>
                     </div>
                 </div>
@@ -118,98 +124,98 @@
     <!-- Menu -->
     <section id="carta" class="menu-section">
         <div class="container">
-            <h2 class="section-title">Nuestra Carta</h2>
-            <p class="section-subtitle">Cocina casera argentina</p>
+            <h2 class="section-title" data-i18n="menu_title">Nuestra Carta</h2>
+            <p class="section-subtitle" data-i18n="menu_subtitle">Cocina casera argentina</p>
             
             <div class="menu-grid">
                 <div class="menu-category">
-                    <h3>🥩 Carnes & Parrilla</h3>
+                    <h3 data-i18n="menu_cat_meat">🥩 Carnes & Parrilla</h3>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Bife de chorizo</span>
-                            <span class="item-badge">⭐ Recomendado</span>
+                            <span class="item-name" data-i18n="item_bife">Bife de chorizo</span>
+                            <span class="item-badge" data-i18n="badge_recommended">⭐ Recomendado</span>
                         </div>
-                        <p class="item-desc">Corte jugoso a la parrilla, con guarnición a elección</p>
+                        <p class="item-desc" data-i18n="item_bife_desc">Corte jugoso a la parrilla, con guarnición a elección</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Asado de tira</span>
+                            <span class="item-name" data-i18n="item_asado">Asado de tira</span>
                         </div>
-                        <p class="item-desc">Costillas a la brasa, tiernas y sabrosas</p>
+                        <p class="item-desc" data-i18n="item_asado_desc">Costillas a la brasa, tiernas y sabrosas</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Vacío</span>
+                            <span class="item-name" data-i18n="item_vacio">Vacío</span>
                         </div>
-                        <p class="item-desc">Corte clásico argentino, cocción lenta</p>
-                    </div>
-                </div>
-                
-                <div class="menu-category">
-                    <h3>🍗 Milanesas</h3>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <span class="item-name">Milanesa napolitana</span>
-                            <span class="item-badge">⭐ Favorito</span>
-                        </div>
-                        <p class="item-desc">Con jamón, queso y salsa de tomate gratinada</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <span class="item-name">Milanesa a caballo</span>
-                        </div>
-                        <p class="item-desc">Coronada con huevos fritos</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <span class="item-name">Suprema de pollo</span>
-                        </div>
-                        <p class="item-desc">Milanesa de pechuga, crocante y dorada</p>
+                        <p class="item-desc" data-i18n="item_vacio_desc">Corte clásico argentino, cocción lenta</p>
                     </div>
                 </div>
                 
                 <div class="menu-category">
-                    <h3>🥗 Entradas & Ensaladas</h3>
+                    <h3 data-i18n="menu_cat_milanesa">🍗 Milanesas</h3>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Provoleta</span>
+                            <span class="item-name" data-i18n="item_napolitana">Milanesa napolitana</span>
+                            <span class="item-badge" data-i18n="badge_favorite">⭐ Favorito</span>
                         </div>
-                        <p class="item-desc">Queso provolone a la plancha con orégano</p>
+                        <p class="item-desc" data-i18n="item_napolitana_desc">Con jamón, queso y salsa de tomate gratinada</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Empanadas</span>
+                            <span class="item-name" data-i18n="item_caballo">Milanesa a caballo</span>
                         </div>
-                        <p class="item-desc">Carne, jamón y queso, o verdura</p>
+                        <p class="item-desc" data-i18n="item_caballo_desc">Coronada con huevos fritos</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Ensalada mixta</span>
+                            <span class="item-name" data-i18n="item_suprema">Suprema de pollo</span>
                         </div>
-                        <p class="item-desc">Lechuga, tomate, cebolla y zanahoria</p>
+                        <p class="item-desc" data-i18n="item_suprema_desc">Milanesa de pechuga, crocante y dorada</p>
                     </div>
                 </div>
                 
                 <div class="menu-category">
-                    <h3>🍮 Postres</h3>
+                    <h3 data-i18n="menu_cat_starters">🥗 Entradas & Ensaladas</h3>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Flan con dulce de leche</span>
-                            <span class="item-badge">⭐ Casero</span>
+                            <span class="item-name" data-i18n="item_provoleta">Provoleta</span>
                         </div>
-                        <p class="item-desc">Flan casero con crema y dulce de leche</p>
+                        <p class="item-desc" data-i18n="item_provoleta_desc">Queso provolone a la plancha con orégano</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Crème caramel</span>
+                            <span class="item-name" data-i18n="item_empanadas">Empanadas</span>
                         </div>
-                        <p class="item-desc">Postre clásico, suave y delicado</p>
+                        <p class="item-desc" data-i18n="item_empanadas_desc">Carne, jamón y queso, o verdura</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Helado artesanal</span>
+                            <span class="item-name" data-i18n="item_ensalada">Ensalada mixta</span>
                         </div>
-                        <p class="item-desc">Sabores de estación</p>
+                        <p class="item-desc" data-i18n="item_ensalada_desc">Lechuga, tomate, cebolla y zanahoria</p>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3 data-i18n="menu_cat_desserts">🍮 Postres</h3>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name" data-i18n="item_flan">Flan con dulce de leche</span>
+                            <span class="item-badge" data-i18n="badge_homemade">⭐ Casero</span>
+                        </div>
+                        <p class="item-desc" data-i18n="item_flan_desc">Flan casero con crema y dulce de leche</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name" data-i18n="item_creme">Crème caramel</span>
+                        </div>
+                        <p class="item-desc" data-i18n="item_creme_desc">Postre clásico, suave y delicado</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name" data-i18n="item_helado">Helado artesanal</span>
+                        </div>
+                        <p class="item-desc" data-i18n="item_helado_desc">Sabores de estación</p>
                     </div>
                 </div>
             </div>
@@ -219,25 +225,25 @@
     <!-- Gallery -->
     <section id="galeria" class="gallery-section">
         <div class="container">
-            <h2 class="section-title">Nuestro Espacio</h2>
-            <p class="section-subtitle">Un lugar para disfrutar</p>
+            <h2 class="section-title" data-i18n="gallery_title">Nuestro Espacio</h2>
+            <p class="section-subtitle" data-i18n="gallery_subtitle">Un lugar para disfrutar</p>
             
             <div class="gallery-grid">
                 <div class="gallery-item gallery-item-large">
                     <img src="images/hero.jpg" alt="Restaurante El Porvenir" loading="lazy">
-                    <div class="gallery-caption">Nuestro restaurante</div>
+                    <div class="gallery-caption" data-i18n="gallery_restaurant">Nuestro restaurante</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/interior.jpg" alt="Interior acogedor" loading="lazy">
-                    <div class="gallery-caption">Ambiente cálido</div>
+                    <div class="gallery-caption" data-i18n="gallery_interior">Ambiente cálido</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/plato1.jpg" alt="Carnes a la parrilla" loading="lazy">
-                    <div class="gallery-caption">Carnes selectas</div>
+                    <div class="gallery-caption" data-i18n="gallery_meat">Carnes selectas</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/vino.jpg" alt="Vinos de Mendoza" loading="lazy">
-                    <div class="gallery-caption">Vinos regionales</div>
+                    <div class="gallery-caption" data-i18n="gallery_wine">Vinos regionales</div>
                 </div>
             </div>
         </div>
@@ -246,12 +252,12 @@
     <!-- Testimonials -->
     <section id="opiniones" class="testimonials-section">
         <div class="container">
-            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <h2 class="section-title" data-i18n="testimonials_title">Lo que dicen nuestros clientes</h2>
             <div class="rating-summary">
                 <span class="big-rating">4.5</span>
                 <div class="rating-details">
                     <span class="stars">⭐⭐⭐⭐⭐</span>
-                    <span>786 opiniones en Google</span>
+                    <span data-i18n="testimonials_count">786 opiniones en Google</span>
                 </div>
             </div>
             
@@ -261,21 +267,21 @@
                         <span class="testimonial-name">Carlos M.</span>
                         <span class="testimonial-stars">⭐⭐⭐⭐⭐</span>
                     </div>
-                    <p>"La milanesa napolitana es espectacular, enorme y muy sabrosa. El ambiente es familiar y la atención muy amable. Volvería sin dudarlo."</p>
+                    <p data-i18n="review_1">"La milanesa napolitana es espectacular, enorme y muy sabrosa. El ambiente es familiar y la atención muy amable. Volvería sin dudarlo."</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-header">
                         <span class="testimonial-name">María L.</span>
                         <span class="testimonial-stars">⭐⭐⭐⭐⭐</span>
                     </div>
-                    <p>"Excelente lugar para almorzar en San Carlos. Las carnes son de primera calidad y los vinos de la zona son increíbles. Muy recomendable."</p>
+                    <p data-i18n="review_2">"Excelente lugar para almorzar en San Carlos. Las carnes son de primera calidad y los vinos de la zona son increíbles. Muy recomendable."</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-header">
                         <span class="testimonial-name">Roberto G.</span>
                         <span class="testimonial-stars">⭐⭐⭐⭐⭐</span>
                     </div>
-                    <p>"El flan casero es de lo mejor que probé. Lugar tranquilo, buena relación precio-calidad. Ideal para ir en familia."</p>
+                    <p data-i18n="review_3">"El flan casero es de lo mejor que probé. Lugar tranquilo, buena relación precio-calidad. Ideal para ir en familia."</p>
                 </div>
             </div>
         </div>
@@ -286,25 +292,25 @@
         <div class="container">
             <div class="info-grid">
                 <div class="info-card">
-                    <h3>🕐 Horarios</h3>
+                    <h3 data-i18n="info_hours_title">🕐 Horarios</h3>
                     <div class="hours">
-                        <div class="hour-row"><span>Lunes - Martes</span><span>Cerrado</span></div>
-                        <div class="hour-row"><span>Miércoles - Sábado</span><span>12:00-15:30 · 20:00-00:00</span></div>
-                        <div class="hour-row"><span>Domingo</span><span>12:00-15:30 · 20:00-23:00</span></div>
+                        <div class="hour-row"><span data-i18n="day_mon_tue">Lunes - Martes</span><span data-i18n="closed">Cerrado</span></div>
+                        <div class="hour-row"><span data-i18n="day_wed_sat">Miércoles - Sábado</span><span>12:00-15:30 · 20:00-00:00</span></div>
+                        <div class="hour-row"><span data-i18n="day_sunday">Domingo</span><span>12:00-15:30 · 20:00-23:00</span></div>
                     </div>
                 </div>
                 <div class="info-card">
-                    <h3>📍 Ubicación</h3>
+                    <h3 data-i18n="info_location_title">📍 Ubicación</h3>
                     <p class="address">San Martín 102<br>M5567 San Carlos<br>Mendoza, Argentina</p>
-                    <a href="https://maps.app.goo.gl/xcZSKzAjPeN5RPmn6" target="_blank" class="btn btn-secondary">Ver en Google Maps</a>
+                    <a href="https://maps.app.goo.gl/xcZSKzAjPeN5RPmn6" target="_blank" class="btn btn-secondary" data-i18n="btn_maps">Ver en Google Maps</a>
                 </div>
                 <div class="info-card">
-                    <h3>ℹ️ Servicios</h3>
+                    <h3 data-i18n="info_services_title">ℹ️ Servicios</h3>
                     <div class="services-list">
-                        <span class="service-tag">✓ Almuerzo</span>
-                        <span class="service-tag">✓ Cena</span>
-                        <span class="service-tag">✓ Para llevar</span>
-                        <span class="service-tag">✓ Accesible</span>
+                        <span class="service-tag" data-i18n="service_lunch">✓ Almuerzo</span>
+                        <span class="service-tag" data-i18n="service_dinner">✓ Cena</span>
+                        <span class="service-tag" data-i18n="service_takeaway">✓ Para llevar</span>
+                        <span class="service-tag" data-i18n="service_accessible">✓ Accesible</span>
                     </div>
                 </div>
             </div>
@@ -315,10 +321,10 @@
     <section id="contacto" class="contact-section">
         <div class="container">
             <div class="contact-content">
-                <h2>¿Querés reservar una mesa?</h2>
-                <p>Visitanos en San Carlos o contactanos para más información</p>
+                <h2 data-i18n="contact_title">¿Querés reservar una mesa?</h2>
+                <p data-i18n="contact_subtitle">Visitanos en San Carlos o contactanos para más información</p>
                 <div class="contact-buttons">
-                    <a href="https://maps.app.goo.gl/xcZSKzAjPeN5RPmn6" target="_blank" class="btn btn-white btn-lg">📍 Ver ubicación</a>
+                    <a href="https://maps.app.goo.gl/xcZSKzAjPeN5RPmn6" target="_blank" class="btn btn-white btn-lg" data-i18n="contact_btn_location">📍 Ver ubicación</a>
                 </div>
             </div>
         </div>
@@ -330,22 +336,23 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <span class="logo">🍷 El Porvenir</span>
-                    <p>Restaurante Tradicional<br>San Carlos, Valle de Uco</p>
+                    <p><span data-i18n="footer_tagline">Restaurante Tradicional</span><br><span data-i18n="footer_location">San Carlos, Valle de Uco</span></p>
                 </div>
                 <div class="footer-links">
-                    <a href="#nosotros">Nosotros</a>
-                    <a href="#carta">Carta</a>
-                    <a href="#opiniones">Opiniones</a>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#nosotros" data-i18n="nav_about">Nosotros</a>
+                    <a href="#carta" data-i18n="nav_menu">Carta</a>
+                    <a href="#opiniones" data-i18n="nav_reviews">Opiniones</a>
+                    <a href="#contacto" data-i18n="nav_contact">Contacto</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 El Porvenir. Todos los derechos reservados.</p>
-                <p class="footer-credit">Sitio creado por <a href="https://agency.devhub.wiki" target="_blank">DevHub Agency</a></p>
+                <p data-i18n="footer_rights">© 2025 El Porvenir. Todos los derechos reservados.</p>
+                <p class="footer-credit"><span data-i18n="footer_credit">Sitio creado por</span> <a href="https://agency.devhub.wiki" target="_blank">DevHub Agency</a></p>
             </div>
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
